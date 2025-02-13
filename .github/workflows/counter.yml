@@ -27,6 +27,6 @@ jobs:
 
       - name: Count lines in the text file
         run: |
-          c=wc -l authors.txt
+          c=$(wc -l < authors.txt)
           echo "Ce projet a été co-construit par $c auteurs incroyables"
         
